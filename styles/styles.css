@@ -1,0 +1,173 @@
+/*COLORS*/
+/*FONTS*/
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url(./fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(./fonts/Poppins-SemiBold.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1440px;
+  height: 100vh;
+  max-height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .title-container {
+  width: 100%;
+  height: 25%;
+  margin-top: 5%;
+}
+.container .title-container .title {
+  font-family: "Poppins-ExtraLight";
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-align: center;
+  color: #4c4e61;
+}
+.container .title-container .sub-title {
+  font-family: "Poppins-SemiBold";
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4c4e61;
+}
+.container .title-container .des-title {
+  width: 50%;
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+  color: #a3a5ae;
+  margin: 0px auto;
+  margin-top: 1%;
+}
+.container .content-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-container .card-container {
+  width: 26%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .content-container .card-container .card {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background: white;
+  border-radius: 4.7px;
+  box-shadow: 0px 4px 20px 0.2px rgba(163, 165, 174, 0.376);
+}
+.container .content-container .card-container .card .card-description {
+  width: 85%;
+  height: 45%;
+  margin: 8%;
+  margin-bottom: 4%;
+}
+.container .content-container .card-container .card .card-description h4 {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.3rem;
+  color: #4c4e61;
+  margin-bottom: 3%;
+}
+.container .content-container .card-container .card .card-description p {
+  font-family: "Poppins-Regular";
+  font-size: 0.9rem;
+  color: #a3a5ae;
+}
+.container .content-container .card-container .card .card-img {
+  width: 20%;
+  height: 30%;
+  margin: 8%;
+}
+.container .content-container .card-container .card .card-img img {
+  width: 100%;
+  height: auto;
+}
+.container .content-container .card-container #card-super {
+  border-top: 4px solid #45d3d3;
+}
+.container .content-container .card-container #card-team {
+  border-top: 4px solid #ea5353;
+}
+.container .content-container .card-container #card-karma {
+  border-top: 4px solid #fcaf4a;
+}
+.container .content-container .card-container #card-calc {
+  border-top: 4px solid #549ef2;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 90vw;
+    max-width: unset;
+    height: auto;
+    max-height: unset;
+  }
+  .container .title-container {
+    height: 10%;
+    margin-bottom: 20%;
+  }
+  .container .title-container .title {
+    font-family: "Poppins-ExtraLight";
+    font-size: 1.5rem;
+  }
+  .container .title-container .sub-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 1.5rem;
+  }
+  .container .title-container .des-title {
+    width: 80%;
+    font-family: "Poppins-Regular";
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-align: center;
+    color: #a3a5ae;
+    margin-top: 1%;
+  }
+  .container .content-container {
+    flex-direction: column;
+  }
+  .container .content-container .card-container {
+    width: 90%;
+    margin-bottom: 8%;
+  }
+  .container .content-container .card-container #card-team {
+    margin-bottom: 8%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
